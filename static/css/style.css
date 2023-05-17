@@ -1,0 +1,86 @@
+@import url("normalize.css");
+
+body {
+    min-height: 100vh;
+
+    font-family: "Roboto", sans-serif;
+}
+
+#header {
+    height: 245px;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../../assets/BANNER\ -\ IMAGE\ -\ MOBILE.png");
+}
+
+#header-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#header-logo {
+    height: 23px;
+    width: 77px;
+}
+
+#header-icons {
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+#header-searchIcon {
+    width: 13px;
+    height: 11px;
+}
+
+#header-hamburger {
+    gap: 5px;
+    width: 23px;
+    height: 13px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-hamburguer-div {
+    border: 1px solid #000;
+}
+
+#header-titles {
+    text-align: center;
+}
+
+#header-titles > * { margin: 0 }
+#header-titles > *:not(:last-child) { margin: 4px }
+
+#header-title {
+    font-size: 25px;
+    color: #3b3b3b;
+}
+
+#header-subtitle {
+    font-weight: normal;
+    font-size: 17px;
+    color: #676767;
+}
+
+#header-button {
+    width: 100px;
+    height: 30px;
+    border: 0;
+
+    font-size: 9px;
+    color: #fff;
+    background: #26b522;
+}
