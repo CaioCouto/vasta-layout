@@ -6,6 +6,24 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+.genericButton {
+    gap: 10px;
+    border: 0;
+    margin: 0 auto;
+    font-size: 14px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #fff;
+}
+
+.genericButton:hover {
+    cursor: pointer;
+    background: none;
+}
+
 #header {
     height: 245px;
     padding: 1rem;
@@ -82,5 +100,145 @@ body {
 
     font-size: 9px;
     color: #fff;
+    background: #26b522;
+}
+
+/* Main styles */
+
+#main {    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-section { width: 100%; }
+
+.main-section-title { text-align: center; }
+
+.main-article {
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.main-button {
+    border: 0;
+    margin: 0 auto;
+    display: block;
+    font-size: 14px;
+
+    color: #fff;
+}
+
+/* Main About */
+
+.main-about-article--hidden { height: 0; }
+
+.main-about-article--hidden * { display: none; }
+
+.main-about-article-content {
+    padding: 0 1rem;
+    box-sizing: border-box;
+    line-height: 2rem;
+}
+
+.main-about-image { width: 100%; }
+
+#main-about-button {
+    gap: 1rem;
+    width: 102px;
+    display: flex;
+    align-items: center;
+    color: #000;
+}
+
+#main-about-buttonIcon {
+    color: #000;
+}
+
+#main-about-buttonIcon:hover {
+    background: none;
+}
+
+/* Main-Portfolio */
+
+.main-portfolio-article {
+    gap: 1rem;
+    padding: 0 1rem;
+    box-sizing: border-box;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.main-portfolio-article--hidden {
+    height: 0;
+    gap: 1rem;
+    padding: 0 1rem;
+    box-sizing: border-box;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.main-portfolio-article--hidden > * { display: none; }
+
+.main-portfolio-image { max-width: 100%; }
+
+#main-portfolio-button {
+    width: 238px;
+    height: 54px;
+    border: 0;
+    color: #fff;
+    background: #587292;
+}
+
+/* Main Contato */
+
+#main-form {
+    box-sizing: border-box;
+    padding: 0 1rem;
+}
+
+.main-form-group {
+    position: relative;
+    width: 100%;
+    height: 40px;
+}
+
+.main-form-group-message { height: 120px; }
+
+.main-form-input {
+    outline: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 1rem;
+    box-sizing: border-box;
+}
+
+.main-form-input:focus { border: 1px solid 587292; }
+
+.main-form-label {
+    cursor: text;
+    position: absolute;
+    left: 1rem;
+    top: 25%;
+    transition: 350ms;
+    background: #fff;
+}
+
+.main-form-textarealabel { top: 10%; }
+
+.main-form-input:focus ~ .main-form-label,
+.main-form-input:not(:placeholder-shown).main-form-input:not(:focus) ~ .main-form-label {
+    top: -0.35rem;
+    font-size: 0.75rem;
+    padding: 0 0.125rem;
+    transition: 350ms;
+}
+
+#main-form-button {
+    width: 100%;
+    height: 34px;
+    font-size: 15px;
     background: #26b522;
 }

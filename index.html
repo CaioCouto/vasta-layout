@@ -10,8 +10,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer" 
+    />
+
     <!-- Local Styles -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/">
     <link rel="stylesheet" href="static/css/style.css">
 
     <title>Vasta</title>
@@ -36,5 +44,167 @@
 
         <button id="header-button">BOTÃO DE CLICK</button>
     </header>
+
+    <main id="main">
+        <section class="main-section">
+            <h2 class="main-section-title">SOBRE</h2>
+            
+            <article class="main-article">
+                <img class="main-about-image" src="assets/main-about-dark.jpg" alt="Pessoas reunídas em torno de uma mesa escura. Cena de reunião.">
+                <p class="main-about-article-content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Etiam facilisis sollicitudin velit, in lacinia dui
+                    pulvinar nec. Cras vehicula sed velit id sagittis.
+                    Aliquam vitae cursus nunc. Ut et magna pulvinar,
+                    varius odio ut, convallis diam. Etiam sapien turpis,
+                    rutrum at est at, lacinia fringilla enim. Morbi iaculis
+                    quam vel ante posuere, ac interdum leo congue.
+                    Donec feugiat augue non lorem feugiat vestibulum.
+                    Maecenas condimentum pretium massa. Nunc
+                    pharetra arcu lectus, ut volutpat dui tempor eu.
+                    In ac faucibus dui, ut suscipit risus. Praesent id
+                    hendrerit lacus, sed sagittis sapien. Fusce quis
+                    porttitor leo sit amet dapibus tellus. Nullam fringilla
+                    varius ultrices.
+                </p>
+            </article>
+           
+            <article class="main-article main-about-article--hidden">
+                <img class="main-about-image" src="assets/main-about-light.jpg" alt="Pessoas reunídas em torno de uma mesa clara e um quadro branco ao fundo. Cena de reunião.">
+                <p class="main-about-article-content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Etiam facilisis sollicitudin velit, in lacinia dui
+                    pulvinar nec. Cras vehicula sed velit id sagittis.
+                    Aliquam vitae cursus nunc. Ut et magna pulvinar,
+                    varius odio ut, convallis diam. Etiam sapien turpis,
+                    rutrum at est at, lacinia fringilla enim. Morbi iaculis
+                    quam vel ante posuere, ac interdum leo congue.
+                    Donec feugiat augue non lorem feugiat vestibulum.
+                    Maecenas condimentum pretium massa. Nunc
+                    pharetra arcu lectus, ut volutpat dui tempor eu.
+                    In ac faucibus dui, ut suscipit risus. Praesent id
+                    hendrerit lacus, sed sagittis sapien. Fusce quis
+                    porttitor leo sit amet dapibus tellus. Nullam fringilla
+                    varius ultrices.
+                </p>
+            </article>
+
+            <article class="main-article">
+                <button id="main-about-button" class="genericButton">
+                    Leia Mais
+                    <i class="fa fa-chevron-down main-about-buttonIcon"></i>
+                </button>
+            </article>
+        </section>
+
+        <section class="main-section">
+            <h2 class="main-section-title">PORTFÓLIO</h2>
+            
+            <article class="main-article main-portfolio-article">
+                <img class="main-portfolio-image" src="assets/portfolio-imagem-1.jpg" alt="Prédios espelhados observados de baixo para cima.">
+                <img class="main-portfolio-image" src="assets/portfolio-imagem-2.jpg" alt="Cidade com muitos prédios sendo vista de cima.">
+            </article>
+
+            <article class="main-article main-portfolio-article">
+                <img class="main-portfolio-image" src="assets/portfolio-imagem-3.jpg" alt="Cidade com muitos prédios sendo vista de lado, mas da altura dos prédio.">
+                <img class="main-portfolio-image" src="assets/portfolio-imagem-4.jpg" alt="Cruzamento de uma cidade com arquitetura clássica, com uma prédio moderno ao fundo.">
+            </article>
+
+            <article class="main-article main-portfolio-article main-portfolio-article--hidden">
+                <img class="main-portfolio-image" src="assets/portfolio-imagem-5.jpg" alt="último andares de um prédio cinza e vermelho.">
+                <img class="main-portfolio-image" src="assets/portfolio-imagem-6.jpg" alt="Prédios observados de baixo para cima.">
+            </article>
+
+            <article class="main-article">
+                <button id="main-portfolio-button" class="genericButton">
+                    Carregar Mais Projetos
+                </button>
+            </article>
+        </section>
+        
+        <section class="main-section">
+            <h2 class="main-section-title">DEPOIMENTOS</h2>
+            
+            <article class="main-article main-portfolio-article">
+                <img class="main-portfolio-image" src="assets/portfolio-imagem-1.jpg" alt="Prédios espelhados observados de baixo para cima.">
+                <img class="main-portfolio-image" src="assets/portfolio-imagem-2.jpg" alt="Cidade com muitos prédios sendo vista de cima.">
+            </article>
+
+            <article class="main-article">
+                <button id="main-portfolio-button" class="genericButton">
+                    Carregar Mais Projetos
+                </button>
+            </article>
+        </section>
+        
+        <section class="main-section">
+            <h2 class="main-section-title">CONTATO</h2>
+            
+            <article class="main-article">                
+                <form id="main-form">
+                    <article class="main-article main-form-group">
+                        <input
+                            type="text"
+                            id="contactFormNome"
+                            name="contactFormNome"
+                            class="main-form-input"
+                            placeholder=""
+                        >
+                        <label class="main-form-label" for="contactFormNome">Nome</label>
+                    </article>
+
+                    <article class="main-article main-form-group">
+                        <input
+                            type="text"
+                            id="contactFormSobrenome"
+                            name="contactFormSobrenome"
+                            class="main-form-input"
+                            placeholder=""
+                        >
+                        <label class="main-form-label" for="contactFormSobrenome">Sobrenome</label>
+                    </article>
+
+                    <article class="main-article main-form-group">
+                        <input
+                            type="text"
+                            id="contactFormEmail"
+                            name="contactFormEmail"
+                            class="main-form-input"
+                            placeholder=""
+                        >
+                        <label class="main-form-label" for="contactFormEmail">Email</label>
+                    </article>
+
+                    <article class="main-article main-form-group">
+                        <input
+                            type="text"
+                            id="contactFormTelefone"
+                            name="contactFormTelefone"
+                            class="main-form-input"
+                            placeholder=""
+                        >
+                        <label class="main-form-label" for="contactFormTelefone">Telefone</label>
+                    </article>
+
+                    <article class="main-article main-form-group main-form-group-message">
+                        <textarea 
+                            cols="30"
+                            name="contactFormMensagem" 
+                            id="contactFormMensagem" 
+                            class="main-form-input"
+                            placeholder=""
+                        >
+                        </textarea>
+                        <label class="main-form-label main-form-textarealabel" for="contactFormMensagem">Mensagem</label>
+                    </article>
+
+                    <button id="main-form-button" class="genericButton">
+                        ENVIAR
+                    </button>
+                </form>
+            </article>
+        </section>
+    </main>
 </body>
 </html>
+
