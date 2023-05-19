@@ -270,7 +270,7 @@ body {
     }
 
     .testimony-carousel-container { overflow: hidden; }
-    .testimony-carousel-container-tablets,
+    .testimony-carousel-container-tablet,
     .testimony-carousel-container-desktop { display: none;}
 
     .testimony-carousel-container,
@@ -675,7 +675,7 @@ body {
     
     .main-testimony-article { height: 150px; }
     .testimony-carousel-container-mobile { display: none; }
-    .testimony-carousel-container-tablets { display: block; }
+    .testimony-carousel-container-tablet { display: block; }
     .carousel-slide { display: flex; }
     .testimony-rating { margin-bottom: 10px; }
     .testimony-rating-icon,
@@ -780,7 +780,7 @@ body {
 
     /* Main Depoimentos */
 
-    .testimony-carousel-container-tablets { display: none; }
+    .testimony-carousel-container-tablet { display: none; }
     .testimony-carousel-container-desktop { display: block; }
 
     /* Main Contato */
