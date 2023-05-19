@@ -14,7 +14,7 @@ body {
     gap: 10px;
     border: 0;
     margin: 0 auto;
-    font-size: 14px;
+    font-size: 14pt;
 
     display: flex;
     align-items: center;
@@ -84,7 +84,7 @@ body {
     .header-list-item { 
         cursor: pointer;
         font-weight: 700;
-        font-size: 15px;
+        font-size: 15pt;
     }
     
     .header-list-item a {
@@ -133,13 +133,13 @@ body {
 
     #header-title {
         margin-bottom: 4px;
-        font-size: 25px;
+        font-size: 25pt;
         color: #3b3b3b;
     }
 
     #header-subtitle {
         font-weight: normal;
-        font-size: 17px;
+        font-size: 17pt;
         color: #676767;
     }
 
@@ -148,7 +148,7 @@ body {
         height: 30px;
         border: 0;
 
-        font-size: 9px;
+        font-size: 9pt;
         color: #fff;
         background: #26b522;
     }
@@ -262,14 +262,15 @@ body {
         margin: 0 auto;
         padding: 0 1rem;
 
-        box-sizing: border-box;
         overflow: hidden;
+        box-sizing: border-box;
 
         display: flex;
         align-items: center;
     }
 
     .testimony-carousel-container { overflow: hidden; }
+    .testimony-carousel-container-tablets,
     .testimony-carousel-container-Desktop { display: none;}
 
     .testimony-carousel-container,
@@ -312,23 +313,23 @@ body {
     .testimony-profile-picture {
         display: block;
         margin: auto;
-        font-size: 2rem;
+        font-size: 2rpt;
     }
 
     .testimony-rating-icon,
     .testimony-profile-name {
-        font-size: 9px;
+        font-size: 9pt;
         margin-top: 0;
     }
 
     .testimony-profile-content {
-        font-size: 7px;
+        font-size: 7pt;
         margin: 0;
     }
 
     .testimony-button {
         z-index: 999;
-        font-size: 17px;
+        font-size: 17pt;
         color: #000;
         background: none;
     }
@@ -373,7 +374,7 @@ body {
     .main-form-input:focus ~ .main-form-label,
     .main-form-input:not(:placeholder-shown).main-form-input:not(:focus) ~ .main-form-label {
         top: -0.35rem;
-        font-size: 0.75rem;
+        font-size:pt.75rem;
         padding: 0 0.125rem;
         transition: 350ms;
     }
@@ -381,7 +382,7 @@ body {
     #main-form-helper-text {
         margin-bottom: 16px;
         text-align: center;
-        font-size: 8px;
+        font-size: 8pt;
     }
 
     .main-form-group-phone-desktop { display: none; }
@@ -391,7 +392,7 @@ body {
     #main-form-button {
         width: 100%;
         height: var(--spacing-34px);
-        font-size: 15px;
+        font-size: 15pt;
         background: #26b522;
     }
 
@@ -408,7 +409,7 @@ body {
     }
 
     .footer-text {
-        font-size: 14px;
+        font-size: 14pt;
         margin: 0;
         margin-bottom: .5rem; 
     }
@@ -442,7 +443,7 @@ body {
     #footer-button {
         margin: 0;
         flex-grow: 1;
-        font-size: 11px;
+        font-size: 11pt;
         height: var(--spacing-34px);
         background: #26b522;
     }
@@ -474,7 +475,7 @@ body {
 
     .footer-portfolio-link p {
         margin: 0;
-        font-size: 11px;
+        font-size: 11pt;
     }
 
     .footer-portfolio-link img { max-width: 100%; }
@@ -530,7 +531,9 @@ body {
     }
 
     .footer-menu-listItem:last-of-type,
-    .footer-about-listItem:last-of-type {margin-bottom: 0; }
+    .footer-about-listItem:last-of-type { margin-bottom: 0; }
+
+    .footer-article-logo-desktop { display: none; }
 }
 
 @media (min-width: 900px) {
@@ -586,14 +589,14 @@ body {
     
     #header-title {
         margin-bottom: 30px;
-        font-size: 44px;
+        font-size: 44pt;
         color: #3b3b3b;
     }
     
     #header-subtitle {
         margin-bottom: 1rem;
         font-weight: normal;
-        font-size: 26px;
+        font-size: 26pt;
         color: #676767;
     }
     
@@ -602,19 +605,17 @@ body {
         height: 51px;
         border: 0;
     
-        font-size: 15px;
+        font-size: 15pt;
         color: #fff;
         background: #26b522;
     }
-}
 
-@media (min-width: 1200px) {
     /* Main styles */
 
     #main { padding: 0 3rem; }
 
     .main-section-title { 
-        font-size: 35px;
+        font-size: 35pt;
         font-weight: 400;
     }
 
@@ -623,8 +624,12 @@ body {
     .main-about-article {
         gap: 30px;
         display: grid;
-        grid-template-columns: repeat(2, auto);
+        align-items: stretch;
     }
+
+    .main-about-first { grid-template-columns: 50% auto; }
+
+    .main-about-second { grid-template-columns: auto 50%; }
 
     #main-about-buttonFirst {
         width: 163px;
@@ -642,13 +647,13 @@ body {
     .main-about-article-content { 
         padding: 0;
         margin-bottom: var(--spacing-34px);
-     }
+    }
 
     .main-about-image { width: 100%; }
     #main-about-image-mobile { display: none; }
     #main-about-image-desktop { display: inline; }
     #main-about-buttonArticle { display: none; }
-
+    
     /* Main-Portfolio */
 
     .main-portfolio-article {
@@ -667,13 +672,97 @@ body {
     
     .main-testimony-article { height: 150px; }
     .testimony-carousel-container-mobile { display: none; }
-    .testimony-carousel-container-Desktop { display: block; }
+    .testimony-carousel-container-tablets { display: block; }
     .carousel-slide { display: flex; }
     .testimony-rating { margin-bottom: 10px; }
     .testimony-rating-icon,
-    .testimony-profile-name { font-size: 12px; }
+    .testimony-profile-name { font-size: 12pt; }
+    .testimony-profile-picture { font-size: 25pt;}
     .testimony-profile-name { margin-bottom: 15px; }
-    .testimony-profile-content { font-size: 10px; }
+    .testimony-profile-content { 
+        font-size: 10pt;
+        padding: 0 5px;
+        box-sizing: border-box;
+    }
+
+    /* Main Contato */
+
+    #main-form { padding: 0 4rem; }
+    
+    /* Footer Styles */
+
+    #footer {
+        padding: 2rem 6rem;
+    }
+    
+    .footer-section {
+        text-align: left;
+        padding: 1rem;
+        border: 3pt solid #fff;
+    }
+
+    .footer-article-logo {
+        width: fit-content;
+        margin: 0 auto;
+    }
+    .footer-article-newsletter-text { 
+        text-align: center;
+        margin-bottom: 30px; 
+    }
+
+    .footer-text {
+        display: inline;
+        font-size: 19pt;
+    }
+
+    #footer-form {
+        margin-bottom: 57px;
+        height: 45px;
+        align-items: stretch;
+    }
+
+    .footer-input { width: 60%; }
+
+    #footer-button {
+        height: auto;
+        font-size: 15pt;
+    }
+
+    #footer-portfolio {
+        margin-top: 19px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .footer-portfolio-link {
+        width: 100px;
+        height: 100px;
+        align-items: center;
+    }
+    
+    .footer-portfolio-link,
+    .footer-portfolio-link:nth-of-type(2n) { margin: 0 auto; }
+    .footer-portfolio-link p { font-size: 12pt; }
+    .footer-portfolio-link img { max-width: 100%; }
+    
+    .footer-section-menus { padding: 0; }
+
+    .footer-menu-listItem,
+    .footer-about-listItem {
+        text-align: center;
+        font-size: 14pt;
+        margin-bottom: 22px;
+    }
+
+    .footer-menu-listItem:last-of-type,
+    .footer-about-listItem:last-of-type { margin-bottom: 0; }
+}
+
+@media (min-width: 1200px) {
+
+    /* Main Depoimentos */
+
+    .testimony-carousel-container-tablets { display: none; }
+    .testimony-carousel-container-Desktop { display: block; }
 
     /* Main Contato */
 
@@ -713,7 +802,7 @@ body {
         text-align: left;
         width: 40%;
         margin: 0;
-        font-size: 10px;
+        font-size: 10pt;
         line-height: 2rem;
     }
 
@@ -735,7 +824,7 @@ body {
 
     .footer-text {
         display: inline;
-        font-size: 19px;
+        font-size: 19pt;
     }
 
     .footer-section {
@@ -757,7 +846,7 @@ body {
 
     #footer-button {
         height: auto;
-        font-size: 15px;
+        font-size: 15pt;
     }
 
     #footer-portfolio {
@@ -773,7 +862,7 @@ body {
     
     .footer-portfolio-link,
     .footer-portfolio-link:nth-of-type(2n) { margin: 0 auto; }
-    .footer-portfolio-link p { font-size: 12px; }
+    .footer-portfolio-link p { font-size: 12pt; }
     .footer-portfolio-link img { max-width: 100%; }
 
     .footer-section-menus {
@@ -788,7 +877,7 @@ body {
         display: block;
         margin: 0;
         margin-right: auto;
-        font-size: 19px;
+        font-size: 19pt;
     }
 
     .footer-section-buttonIcon { display: none; }
@@ -812,7 +901,8 @@ body {
 
     .footer-menu-listItem,
     .footer-about-listItem { 
-        font-size: 14px;
+        text-align: left;
+        font-size: 14pt;
         margin-bottom: 22px;
     }
 

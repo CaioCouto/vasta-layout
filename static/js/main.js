@@ -5,6 +5,9 @@ import { showHeaderMenu, showSecondAboutSection, showMoreProjects, showFooterMen
 if (window.innerWidth < 900) {
     showHeaderMenu()
     showSecondAboutSection()
+}
+
+if (window.innerWidth < 1200) {
     showMoreProjects()
     showFooterMenus()
 }
