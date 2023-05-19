@@ -533,8 +533,7 @@ body {
     .footer-about-listItem:last-of-type {margin-bottom: 0; }
 }
 
-@media (min-width: 1200px) {    
-
+@media (min-width: 900px) {
     /* Header Styles */
 
     #header {
@@ -607,7 +606,9 @@ body {
         color: #fff;
         background: #26b522;
     }
+}
 
+@media (min-width: 1200px) {
     /* Main styles */
 
     #main { padding: 0 3rem; }
@@ -615,7 +616,7 @@ body {
     .main-section-title { 
         font-size: 35px;
         font-weight: 400;
-     }
+    }
 
     /* Main About */
 
