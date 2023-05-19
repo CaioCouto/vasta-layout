@@ -8,7 +8,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link
@@ -20,7 +20,7 @@
     />
 
     <!-- Local Styles -->
-    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/styles.css">
 
     <title>Vasta</title>
 </head>
@@ -28,8 +28,17 @@
     <header id="header">
         <nav id="header-nav">
             <img id="header-logo" src="assets/header-logo-98x28.png" alt="Logo da empresa versão escura.">
+
             <section id="header-icons">
+                <ul id="header-list">
+                    <li class="header-list-item"><a href="#main-about-section">Sobre</a></li>
+                    <li class="header-list-item"><a href="#main-portfolio-section">Portfólio</a></li>
+                    <li class="header-list-item"><a href="#main-testimony-section">Depoimentos</a></li>
+                    <li class="header-list-item"><a href="#main-contact-section">Contato</a></li>
+                </ul>
+
                 <img id="header-searchIcon" src="assets/search-icon.png" alt="Ícone de uma lupa.">
+
                 <div id="header-hamburger">
                     <div class="header-hamburguer-div"></div>
                     <div class="header-hamburguer-div"></div>
@@ -38,39 +47,44 @@
         </nav>
 
         <section id="header-titles">
-            <h1 id="header-title">TÍTULO BANNER</h1>
-            <h4 id="header-subtitle">SUBTÍTULO BANNER</h4>
+            <div>
+                <h1 id="header-title">TÍTULO BANNER</h1>
+                <h4 id="header-subtitle">SUBTÍTULO BANNER</h4>
+            </div>
+            <button id="header-button">BOTÃO DE CLICK</button>
         </section>
 
-        <button id="header-button">BOTÃO DE CLICK</button>
     </header>
 
     <main id="main">
-        <section class="main-section">
+        <section id="main-about-section" class="main-section">
             <h2 class="main-section-title">SOBRE</h2>
             
-            <article class="main-article">
+            <article id="main-about-first" class="main-article main-about-article">
                 <img class="main-about-image" src="assets/main-about-dark.jpg" alt="Pessoas reunídas em torno de uma mesa escura. Cena de reunião.">
-                <p class="main-about-article-content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit. Etiam facilisis sollicitudin velit, in lacinia dui
-                    pulvinar nec. Cras vehicula sed velit id sagittis.
-                    Aliquam vitae cursus nunc. Ut et magna pulvinar,
-                    varius odio ut, convallis diam. Etiam sapien turpis,
-                    rutrum at est at, lacinia fringilla enim. Morbi iaculis
-                    quam vel ante posuere, ac interdum leo congue.
-                    Donec feugiat augue non lorem feugiat vestibulum.
-                    Maecenas condimentum pretium massa. Nunc
-                    pharetra arcu lectus, ut volutpat dui tempor eu.
-                    In ac faucibus dui, ut suscipit risus. Praesent id
-                    hendrerit lacus, sed sagittis sapien. Fusce quis
-                    porttitor leo sit amet dapibus tellus. Nullam fringilla
-                    varius ultrices.
-                </p>
+                <div>
+                    <p class="main-about-article-content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Etiam facilisis sollicitudin velit, in lacinia dui
+                        pulvinar nec. Cras vehicula sed velit id sagittis.
+                        Aliquam vitae cursus nunc. Ut et magna pulvinar,
+                        varius odio ut, convallis diam. Etiam sapien turpis,
+                        rutrum at est at, lacinia fringilla enim. Morbi iaculis
+                        quam vel ante posuere, ac interdum leo congue.
+                        Donec feugiat augue non lorem feugiat vestibulum.
+                        Maecenas condimentum pretium massa. Nunc
+                        pharetra arcu lectus, ut volutpat dui tempor eu.
+                        In ac faucibus dui, ut suscipit risus. Praesent id
+                        hendrerit lacus, sed sagittis sapien. Fusce quis
+                        porttitor leo sit amet dapibus tellus. Nullam fringilla
+                        varius ultrices.
+                    </p>
+                    <button id="main-about-buttonFirst" class="genericButton">SAIBA MAIS</button>
+                </div>
             </article>
            
-            <article class="main-article main-about-article--hidden">
-                <img class="main-about-image" src="assets/main-about-light.jpg" alt="Pessoas reunídas em torno de uma mesa clara e um quadro branco ao fundo. Cena de reunião.">
+            <article class="main-article main-about-article main-about-second">
+                <img id="main-about-image-mobile" class="main-about-image" src="assets/main-about-light.jpg" alt="Pessoas reunídas em torno de uma mesa clara e um quadro branco ao fundo. Cena de reunião.">
                 <p class="main-about-article-content">
                     Lorem ipsum dolor sit amet, consectetur adipiscing
                     elit. Etiam facilisis sollicitudin velit, in lacinia dui
@@ -87,132 +101,349 @@
                     porttitor leo sit amet dapibus tellus. Nullam fringilla
                     varius ultrices.
                 </p>
+                <img id="main-about-image-desktop" class="main-about-image" src="assets/main-about-light.jpg" alt="Pessoas reunídas em torno de uma mesa clara e um quadro branco ao fundo. Cena de reunião.">
             </article>
 
-            <article class="main-article">
-                <button id="main-about-button" class="genericButton">
-                    Leia Mais
-                    <i class="fa fa-chevron-down main-about-buttonIcon"></i>
-                </button>
+            <article id="main-about-buttonArticle" class="main-article">
+                <button id="main-about-button" class="genericButton">Leia Mais</button>
+                <i id="main-about-iconDown" class="fa fa-chevron-down main-about-buttonIcon"></i>
+                <i id="main-about-iconUp" class="fa fa-chevron-up main-about-buttonIcon" style="display: none;"></i>
             </article>
         </section>
 
-        <section class="main-section">
+        <section id="main-portfolio-section" class="main-section">
             <h2 class="main-section-title">PORTFÓLIO</h2>
             
             <article class="main-article main-portfolio-article">
-                <img class="main-portfolio-image" src="assets/portfolio-imagem-1.jpg" alt="Prédios espelhados observados de baixo para cima.">
-                <img class="main-portfolio-image" src="assets/portfolio-imagem-2.jpg" alt="Cidade com muitos prédios sendo vista de cima.">
+                <!-- Imagens são carregadas via script -->
             </article>
 
-            <article class="main-article main-portfolio-article">
-                <img class="main-portfolio-image" src="assets/portfolio-imagem-3.jpg" alt="Cidade com muitos prédios sendo vista de lado, mas da altura dos prédio.">
-                <img class="main-portfolio-image" src="assets/portfolio-imagem-4.jpg" alt="Cruzamento de uma cidade com arquitetura clássica, com uma prédio moderno ao fundo.">
-            </article>
-
-            <article class="main-article main-portfolio-article main-portfolio-article--hidden">
-                <img class="main-portfolio-image" src="assets/portfolio-imagem-5.jpg" alt="último andares de um prédio cinza e vermelho.">
-                <img class="main-portfolio-image" src="assets/portfolio-imagem-6.jpg" alt="Prédios observados de baixo para cima.">
-            </article>
-
-            <article class="main-article">
+            <article id="main-portfolio-buttonArticle" class="main-article">
                 <button id="main-portfolio-button" class="genericButton">
                     Carregar Mais Projetos
                 </button>
             </article>
         </section>
         
-        <section class="main-section">
+        <section id="main-testimony-section" class="main-section">
             <h2 class="main-section-title">DEPOIMENTOS</h2>
             
-            <article class="main-article main-portfolio-article">
-                <img class="main-portfolio-image" src="assets/portfolio-imagem-1.jpg" alt="Prédios espelhados observados de baixo para cima.">
-                <img class="main-portfolio-image" src="assets/portfolio-imagem-2.jpg" alt="Cidade com muitos prédios sendo vista de cima.">
-            </article>
+            <article class="main-article main-testimony-article">
+                <button class="genericButton testimony-button testimony-button-left">
+                    <i class="fa fa-chevron-left"></i>
+                </button>
 
-            <article class="main-article">
-                <button id="main-portfolio-button" class="genericButton">
-                    Carregar Mais Projetos
+                <!-- Carrosel de depoimentos para mobile  -->
+                <div class="testimony-carousel-container testimony-carousel-container-mobile">
+                    <ul class="carousel-track">
+                        <li class="carousel-slide current-slide">
+                            <div class="testimony-rating">
+                                <i class="fa fa-sharp fa-light fa-star testimony-rating-icon"></i>
+                                <i class="fa fa-sharp fa-light fa-star testimony-rating-icon"></i>
+                                <i class="fa fa-sharp fa-light fa-star testimony-rating-icon"></i>
+                                <i class="fa fa-sharp fa-light fa-star testimony-rating-icon"></i>
+                                <i class="fa fa-sharp fa-light fa-star testimony-rating-icon"></i>
+                            </div>
+                            <div class="testimony-content">
+                                <i class="fa fa-light fa-user testimony-profile-picture"></i>
+                                <div class="testimony-text">
+                                    <p class="testimony-profile-name">Lorem Ipsum doilor</p>
+                                    <p class="testimony-profile-content">
+                                        Vivamus pharetra, metus id tempor consequat,
+                                        dolor tortor volutpat leo, et vulputate orci ante
+                                        sed tellus. Donec tellus felis, pulvinar eget
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="carousel-slide">
+                            <div class="testimony-rating">
+                                <i class="fa fa-sharp fa-light fa-star testimony-rating-icon"></i>
+                                <i class="fa fa-sharp fa-light fa-star testimony-rating-icon"></i>
+                                <i class="fa fa-sharp fa-light fa-star testimony-rating-icon"></i>
+                                <i class="fa fa-sharp fa-light fa-star testimony-rating-icon"></i>
+                                <i class="fa fa-sharp fa-light fa-star testimony-rating-icon"></i>
+                            </div>
+                            <div class="testimony-content">
+                                <i class="fa fa-light fa-user testimony-profile-picture"></i>
+                                <div class="testimony-text">
+                                    <p class="testimony-profile-name">Lorem Ipsum doilor</p>
+                                    <p class="testimony-profile-content">
+                                        Vivamus pharetra, metus id tempor consequat,
+                                        dolor tortor volutpat leo, et vulputate orci ante
+                                        sed tellus. Donec tellus felis, pulvinar eget
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="carousel-slide">
+                            <div class="testimony-rating">
+                                <i class="fa fa-sharp fa-light fa-star testimony-rating-icon"></i>
+                                <i class="fa fa-sharp fa-light fa-star testimony-rating-icon"></i>
+                                <i class="fa fa-sharp fa-light fa-star testimony-rating-icon"></i>
+                                <i class="fa fa-sharp fa-light fa-star testimony-rating-icon"></i>
+                                <i class="fa fa-sharp fa-light fa-star testimony-rating-icon"></i>
+                            </div>
+                            <div class="testimony-content">
+                                <i class="fa fa-light fa-user testimony-profile-picture"></i>
+                                <div class="testimony-text">
+                                    <p class="testimony-profile-name">Lorem Ipsum doilor</p>
+                                    <p class="testimony-profile-content">
+                                        Vivamus pharetra, metus id tempor consequat,
+                                        dolor tortor volutpat leo, et vulputate orci ante
+                                        sed tellus. Donec tellus felis, pulvinar eget
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Fim do carrosel de depoimentos para mobile  -->
+                
+                <!-- Carrosel de depoimentos para desktop  -->
+                <div class="testimony-carousel-container testimony-carousel-container-Desktop">
+                    <ul class="carousel-track">
+                        <li class="carousel-slide current-slide">
+                            <div>
+                                <div class="testimony-rating">
+                                    <i class="fa fa-sharp fa-light fa-star testimony-rating-icon"></i>
+                                    <i class="fa fa-sharp fa-light fa-star testimony-rating-icon"></i>
+                                    <i class="fa fa-sharp fa-light fa-star testimony-rating-icon"></i>
+                                    <i class="fa fa-sharp fa-light fa-star testimony-rating-icon"></i>
+                                    <i class="fa fa-sharp fa-light fa-star testimony-rating-icon"></i>
+                                </div>
+                                <div class="testimony-content">
+                                    <i class="fa fa-light fa-user testimony-profile-picture"></i>
+                                    <div class="testimony-text">
+                                        <p class="testimony-profile-name">Lorem Ipsum doilor</p>
+                                        <p class="testimony-profile-content">
+                                            Vivamus pharetra, metus id tempor consequat,
+                                            dolor tortor volutpat leo, et vulputate orci ante
+                                            sed tellus. Donec tellus felis, pulvinar eget
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="testimony-rating">
+                                    <i class="fa fa-sharp fa-light fa-star testimony-rating-icon"></i>
+                                    <i class="fa fa-sharp fa-light fa-star testimony-rating-icon"></i>
+                                    <i class="fa fa-sharp fa-light fa-star testimony-rating-icon"></i>
+                                    <i class="fa fa-sharp fa-light fa-star testimony-rating-icon"></i>
+                                    <i class="fa fa-sharp fa-light fa-star testimony-rating-icon"></i>
+                                </div>
+                                <div class="testimony-content">
+                                    <i class="fa fa-light fa-user testimony-profile-picture"></i>
+                                    <div class="testimony-text">
+                                        <p class="testimony-profile-name">Lorem Ipsum doilor</p>
+                                        <p class="testimony-profile-content">
+                                            Vivamus pharetra, metus id tempor consequat,
+                                            dolor tortor volutpat leo, et vulputate orci ante
+                                            sed tellus. Donec tellus felis, pulvinar eget
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="testimony-rating">
+                                    <i class="fa fa-sharp fa-light fa-star testimony-rating-icon"></i>
+                                    <i class="fa fa-sharp fa-light fa-star testimony-rating-icon"></i>
+                                    <i class="fa fa-sharp fa-light fa-star testimony-rating-icon"></i>
+                                    <i class="fa fa-sharp fa-light fa-star testimony-rating-icon"></i>
+                                    <i class="fa fa-sharp fa-light fa-star testimony-rating-icon"></i>
+                                </div>
+                                <div class="testimony-content">
+                                    <i class="fa fa-light fa-user testimony-profile-picture"></i>
+                                    <div class="testimony-text">
+                                        <p class="testimony-profile-name">Lorem Ipsum doilor</p>
+                                        <p class="testimony-profile-content">
+                                            Vivamus pharetra, metus id tempor consequat,
+                                            dolor tortor volutpat leo, et vulputate orci ante
+                                            sed tellus. Donec tellus felis, pulvinar eget
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="carousel-slide">
+                            <div>
+                                <div class="testimony-rating">
+                                    <i class="fa fa-sharp fa-light fa-star testimony-rating-icon"></i>
+                                    <i class="fa fa-sharp fa-light fa-star testimony-rating-icon"></i>
+                                    <i class="fa fa-sharp fa-light fa-star testimony-rating-icon"></i>
+                                    <i class="fa fa-sharp fa-light fa-star testimony-rating-icon"></i>
+                                    <i class="fa fa-sharp fa-light fa-star testimony-rating-icon"></i>
+                                </div>
+                                <div class="testimony-content">
+                                    <i class="fa fa-light fa-user testimony-profile-picture"></i>
+                                    <div class="testimony-text">
+                                        <p class="testimony-profile-name">Lorem Ipsum doilor</p>
+                                        <p class="testimony-profile-content">
+                                            Vivamus pharetra, metus id tempor consequat,
+                                            dolor tortor volutpat leo, et vulputate orci ante
+                                            sed tellus. Donec tellus felis, pulvinar eget
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="testimony-rating">
+                                    <i class="fa fa-sharp fa-light fa-star testimony-rating-icon"></i>
+                                    <i class="fa fa-sharp fa-light fa-star testimony-rating-icon"></i>
+                                    <i class="fa fa-sharp fa-light fa-star testimony-rating-icon"></i>
+                                    <i class="fa fa-sharp fa-light fa-star testimony-rating-icon"></i>
+                                    <i class="fa fa-sharp fa-light fa-star testimony-rating-icon"></i>
+                                </div>
+                                <div class="testimony-content">
+                                    <i class="fa fa-light fa-user testimony-profile-picture"></i>
+                                    <div class="testimony-text">
+                                        <p class="testimony-profile-name">Lorem Ipsum doilor</p>
+                                        <p class="testimony-profile-content">
+                                            Vivamus pharetra, metus id tempor consequat,
+                                            dolor tortor volutpat leo, et vulputate orci ante
+                                            sed tellus. Donec tellus felis, pulvinar eget
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="testimony-rating">
+                                    <i class="fa fa-sharp fa-light fa-star testimony-rating-icon"></i>
+                                    <i class="fa fa-sharp fa-light fa-star testimony-rating-icon"></i>
+                                    <i class="fa fa-sharp fa-light fa-star testimony-rating-icon"></i>
+                                    <i class="fa fa-sharp fa-light fa-star testimony-rating-icon"></i>
+                                    <i class="fa fa-sharp fa-light fa-star testimony-rating-icon"></i>
+                                </div>
+                                <div class="testimony-content">
+                                    <i class="fa fa-light fa-user testimony-profile-picture"></i>
+                                    <div class="testimony-text">
+                                        <p class="testimony-profile-name">Lorem Ipsum doilor</p>
+                                        <p class="testimony-profile-content">
+                                            Vivamus pharetra, metus id tempor consequat,
+                                            dolor tortor volutpat leo, et vulputate orci ante
+                                            sed tellus. Donec tellus felis, pulvinar eget
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Fim do carrosel de depoimentos para mobile  -->
+
+                <button class="genericButton testimony-button testimony-button-right">
+                    <i class="fa fa-chevron-right"></i>
                 </button>
             </article>
         </section>
         
-        <section class="main-section">
+        <section id="main-contact-section" class="main-section">
             <h2 class="main-section-title">CONTATO</h2>
             
             <article class="main-article">                
                 <form id="main-form">
-                    <article class="main-article main-form-group">
-                        <input
-                            type="text"
-                            id="contactFormNome"
-                            name="contactFormNome"
-                            class="main-form-input"
-                            placeholder=""
-                        >
-                        <label class="main-form-label" for="contactFormNome">Nome</label>
-                    </article>
+                    <section id="main-form-personalInfo">
+                        <article class="main-article main-form-group">
+                            <input
+                                type="text"
+                                id="contactFormNome"
+                                name="contactFormNome"
+                                class="main-form-input"
+                                placeholder=""
+                            >
+                            <label class="main-form-label" for="contactFormNome">Nome</label>
+                        </article>
+    
+                        <article class="main-article main-form-group">
+                            <input
+                                type="text"
+                                id="contactFormSobrenome"
+                                name="contactFormSobrenome"
+                                class="main-form-input"
+                                placeholder=""
+                            >
+                            <label class="main-form-label" for="contactFormSobrenome">Sobrenome</label>
+                        </article>
+    
+                        <article class="main-article main-form-group">
+                            <input
+                                type="text"
+                                id="contactFormEmail"
+                                name="contactFormEmail"
+                                class="main-form-input"
+                                placeholder=""
+                            >
+                            <label class="main-form-label" for="contactFormEmail">Email</label>
+                        </article>
+                    </section>
 
-                    <article class="main-article main-form-group">
-                        <input
-                            type="text"
-                            id="contactFormSobrenome"
-                            name="contactFormSobrenome"
-                            class="main-form-input"
-                            placeholder=""
-                        >
-                        <label class="main-form-label" for="contactFormSobrenome">Sobrenome</label>
-                    </article>
+                    <section id="main-form-contactInfo">
+                        <article class="main-article main-form-group main-form-group-phone-mobile">
+                            <input
+                                type="text"
+                                id="contactFormTelefone"
+                                name="contactFormTelefone"
+                                class="main-form-input"
+                                placeholder=""
+                            >
+                            <label class="main-form-label" for="contactFormTelefone">Telefone</label>
+                        </article>
+    
+                        <article class="main-article main-form-group main-form-group-message">
+                            <textarea 
+                                cols="30"
+                                name="contactFormMensagem" 
+                                id="contactFormMensagem" 
+                                class="main-form-input"
+                                placeholder=""
+                            >
+                            </textarea>
+                            <label class="main-form-label main-form-textarealabel" for="contactFormMensagem">Mensagem</label>
+                        </article>
 
-                    <article class="main-article main-form-group">
-                        <input
-                            type="text"
-                            id="contactFormEmail"
-                            name="contactFormEmail"
-                            class="main-form-input"
-                            placeholder=""
-                        >
-                        <label class="main-form-label" for="contactFormEmail">Email</label>
-                    </article>
+                        <div>
+                            <article class="main-article main-form-group main-form-group-phone-desktop">
+                                <input
+                                    type="text"
+                                    id="contactFormTelefone"
+                                    name="contactFormTelefone"
+                                    class="main-form-input"
+                                    placeholder=""
+                                >
+                                <label class="main-form-label" for="contactFormTelefone">Telefone</label>
+                            </article>
 
-                    <article class="main-article main-form-group">
-                        <input
-                            type="text"
-                            id="contactFormTelefone"
-                            name="contactFormTelefone"
-                            class="main-form-input"
-                            placeholder=""
-                        >
-                        <label class="main-form-label" for="contactFormTelefone">Telefone</label>
-                    </article>
+                            <div id="main-form-footer">
+                                <p id="main-form-helper-text">
+                                    Todos os dados são guardados de
+                                    forma segura, saiba mais 
+                                    <span id="main-form-span">aqui</span>
+                                </p>
 
-                    <article class="main-article main-form-group main-form-group-message">
-                        <textarea 
-                            cols="30"
-                            name="contactFormMensagem" 
-                            id="contactFormMensagem" 
-                            class="main-form-input"
-                            placeholder=""
-                        >
-                        </textarea>
-                        <label class="main-form-label main-form-textarealabel" for="contactFormMensagem">Mensagem</label>
-                    </article>
-
-                    <button id="main-form-button" class="genericButton">
-                        ENVIAR
-                    </button>
+                                <button id="main-form-button" class="genericButton">
+                                    ENVIAR
+                                </button>
+                            </div>                            
+                        </div>
+                    </section>
                 </form>
             </article>
         </section>
     </main>
     
     <footer id="footer">
-        <section class="footer-section">
-            <article class="footer-article">
+        <section class="footer-section footer-section-newsletter">
+            <article class="footer-article footer-article-logo">
                 <img src="assets/footer-logo-123x43.png" alt="logo da empresa branco">
             </article>
 
-            <article class="footer-article">
+            <article class="footer-article footer-article-newsletter-text">
                 <h3 class="footer-text">SE INSCREVA PARA RECEBER</h3>
                 <h3 class="footer-text">NOSSAS NOVIDADES</h3>
             </article>
@@ -259,20 +490,44 @@
             </article>
         </section>
 
-        <section class="footer-section">
-            <button class="genericButton footer-section-button">
-                Menu
-                <i class="fa fa-chevron-down"></i>
-            </button>
-        </section>
+        <section class="footer-section  footer-section-menus">
+            <div class="footer-menus">
+                <article class="footer-menu">
+                    <button class="genericButton footer-section-button footer-generalMenu-button">
+                        Menu
+                        <i class="fa fa-chevron-down footer-section-buttonIcon"></i>
+                    </button>
+    
+                    <ul class="footer-menu-list footer-generalMenu-list">
+                        <li class="footer-menu-listItem"><a href="#main-about-section">Sobre</a></li>
+                        <li class="footer-menu-listItem"><a href="#main-portfolio-section">Portfólio</a></li>
+                        <li class="footer-menu-listItem"><a href="#main-testimony-section">Depoimentos</a></li>
+                        <li class="footer-menu-listItem"><a href="#main-contact-section">Contato</a></li>
+                    </ul>
+                </article>
+                
+                <hr class="footer-menus-divider"/>
+    
+                <article class="footer-menu">
+                    <button class="genericButton footer-section-button footer-about-button">
+                        Sobre
+                        <i class="fa fa-chevron-down footer-section-buttonIcon"></i>
+                    </button>
+        
+                    <ul class="footer-menu-list footer-about-list">
+                        <li class="footer-menu-listItem"><a href="#">Politica de Privacidade</a></li>
+                        <li class="footer-menu-listItem"><a href="#">Termos de Uso</a></li>
+                    </ul>
+                </article>
+            </div>
 
-        <section class="footer-section">
-            <button class="genericButton footer-section-button">
-                Sobre
-                <i class="fa fa-chevron-down"></i>
-            </button>
+            <article class="footer-article footer-article-logo-desktop">
+                <img src="assets/footer-logo-123x43.png" alt="logo da empresa branco">
+            </article>
         </section>
     </footer>
+
+    <script src="static/js/main.js" type="module"></script>
 </body>
 </html>
 
