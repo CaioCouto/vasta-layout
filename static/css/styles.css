@@ -358,7 +358,8 @@ body {
         box-sizing: border-box;
     }
 
-    .main-form-input:focus { border: 1px solid 587292; }
+    .main-form-input:focus,
+    .main-form-textarea:focus { border: 1px solid #587292; }
 
     .main-form-label {
         cursor: text;
@@ -369,12 +370,14 @@ body {
         background: #fff;
     }
 
+    .main-form-textarea { padding: 1rem; }
+
     .main-form-textarealabel { top: 10%; }
 
     .main-form-input:focus ~ .main-form-label,
     .main-form-input:not(:placeholder-shown).main-form-input:not(:focus) ~ .main-form-label {
         top: -0.35rem;
-        font-size:pt.75rem;
+        font-size: 10pt;
         padding: 0 0.125rem;
         transition: 350ms;
     }
@@ -793,19 +796,19 @@ body {
     #main-form-personalInfo { 
         margin-bottom: 30px;
         grid-template-columns: repeat(3, 1fr);
-     }
+    }
 
     #main-form-contactInfo { 
         align-items: stretch;
         grid-template-columns: repeat(2, 1fr);
-     }
+    }
 
     .main-form-group-phone-mobile { display: none; }
     .main-form-group-phone-desktop{ 
         display: block;
         margin-bottom: 17px;
-     }
-
+    }
+    
     .main-form-group-message { height: 100%; }
 
     #main-form-footer {
