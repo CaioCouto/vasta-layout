@@ -1,7 +1,11 @@
 @import url("normalize.css");
 
 :root {
+    /* Colors */
+    --main-blue: #587292;
+    --CTA-green: #26b522;
 
+    /*  Spacings */
     --spacing-34px: 34px;
 }
 
@@ -150,7 +154,7 @@ body {
 
         font-size: 9pt;
         color: #fff;
-        background: #26b522;
+        background: var(--CTA-green);
     }
 
     /* Main styles */
@@ -396,7 +400,7 @@ body {
         width: 100%;
         height: var(--spacing-34px);
         font-size: 15pt;
-        background: #26b522;
+        background: var(--CTA-green);
     }
 
     /* Footer */
@@ -448,7 +452,7 @@ body {
         flex-grow: 1;
         font-size: 11pt;
         height: var(--spacing-34px);
-        background: #26b522;
+        background: var(--CTA-green);
     }
 
     #footer-portfolio {
@@ -610,7 +614,7 @@ body {
     
         font-size: 15pt;
         color: #fff;
-        background: #26b522;
+        background: var(--CTA-green);
     }
 
     /* Main styles */
