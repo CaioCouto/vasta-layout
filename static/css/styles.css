@@ -243,7 +243,7 @@ body {
     .main-portfolio-article--hidden > * { display: none; }
 
     .main-portfolio-image { max-width: 100%; }
-    #main-portfolio-imageDesktop { display: none;}
+    #main-portfolio-imagedesktop { display: none;}
 
     #main-portfolio-button {
         width: 238px;
@@ -271,7 +271,7 @@ body {
 
     .testimony-carousel-container { overflow: hidden; }
     .testimony-carousel-container-tablets,
-    .testimony-carousel-container-Desktop { display: none;}
+    .testimony-carousel-container-desktop { display: none;}
 
     .testimony-carousel-container,
     .carousel-track {
@@ -781,7 +781,7 @@ body {
     /* Main Depoimentos */
 
     .testimony-carousel-container-tablets { display: none; }
-    .testimony-carousel-container-Desktop { display: block; }
+    .testimony-carousel-container-desktop { display: block; }
 
     /* Main Contato */
 
