@@ -758,6 +758,22 @@ body {
 }
 
 @media (min-width: 1200px) {
+    /* Header Styles */
+
+    #header {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+
+    /* Main styles */
+
+    #main { padding: 0 6rem; }
+
+    /* Main About */
+
+    .main-about-first { grid-template-columns: 25% auto; }
+    .main-about-second { grid-template-columns: auto 25%; }
+    #main-about-image-desktop { display: inline; }
 
     /* Main Depoimentos */
 
