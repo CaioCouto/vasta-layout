@@ -808,7 +808,7 @@ body {
         display: block;
         margin-bottom: 17px;
     }
-    
+
     .main-form-group-message { height: 100%; }
 
     #main-form-footer {
@@ -936,3 +936,16 @@ body {
         margin: 0;
     }
 }
+
+@media (min-width: 1800px) {
+    /* Header Styles */
+
+    #header {
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+
+    /* Main styles */
+
+    #main { padding: 0 8rem; }
+} 
