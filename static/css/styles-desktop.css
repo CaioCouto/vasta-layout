@@ -1,0 +1,189 @@
+@media (min-width: 1200px) {
+    /* Header Styles */
+
+    #header {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+
+    /* Main styles */
+
+    #main { padding: 0 6rem; }
+
+    /* Main About */
+
+    .main-about-first { grid-template-columns: 25% auto; }
+    .main-about-second { grid-template-columns: auto 25%; }
+    #main-about-image-desktop { display: inline; }
+
+    /* Main Depoimentos */
+
+    .testimony-carousel-container-tablet { display: none; }
+    .testimony-carousel-container-desktop { display: block; }
+
+    /* Main Contato */
+
+    #main-form { padding: 0 6rem; }
+
+    #main-form-personalInfo,
+    #main-form-contactInfo {
+        gap: 42px;
+        display: grid;
+    }
+    
+    #main-form-personalInfo { 
+        margin-bottom: 30px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #main-form-contactInfo { 
+        align-items: stretch;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .main-form-group-phone-mobile { display: none; }
+    .main-form-group-phone-desktop{ 
+        display: block;
+        margin-bottom: 17px;
+    }
+
+    .main-form-group-message { height: 100%; }
+
+    #main-form-footer {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+    }
+
+    #main-form-helper-text {
+        text-align: left;
+        width: 40%;
+        margin: 0;
+        font-size: 10pt;
+        line-height: 2rem;
+    }
+
+    #main-form-button {
+        margin: 0;
+        width: 186px;
+        height: auto;
+    }
+
+    /* Footer */
+
+    #footer {
+        padding: 2rem 6rem;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+    }
+
+    .footer-article-logo { display: none; }
+
+    .footer-text {
+        display: inline;
+        font-size: 19pt;
+    }
+
+    .footer-section {
+        text-align: left;
+        padding: 1rem;
+        border: 3pt solid #fff;
+    }
+
+    .footer-section:last-of-type { border-left: 0; }
+    .footer-article-newsletter-text { margin-bottom: 30px;}
+
+    #footer-form {
+        margin-bottom: 57px;
+        height: 45px;
+        align-items: stretch;
+    }
+
+    .footer-input { width: 60%; }
+
+    #footer-button {
+        height: auto;
+        font-size: 15pt;
+    }
+
+    #footer-portfolio {
+        margin-top: 19px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .footer-portfolio-link {
+        width: 100px;
+        height: 100px;
+        align-items: center;
+    }
+    
+    .footer-portfolio-link,
+    .footer-portfolio-link:nth-of-type(2n) { margin: 0 auto; }
+    .footer-portfolio-link p { font-size: 12pt; }
+    .footer-portfolio-link img { max-width: 100%; }
+
+    .footer-section-menus {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-menus {display: flex; }
+
+    .footer-section-button {
+        cursor: default;
+        display: block;
+        margin: 0;
+        margin-right: auto;
+        font-size: 19pt;
+    }
+
+    .footer-section-buttonIcon { display: none; }
+
+    .footer-menu {
+        width: 100%;
+        padding: 19px;
+        text-align: left;
+        box-sizing: border-box;
+    }
+
+    .footer-menus-divider { display: none; }
+
+    .footer-section-button:hover { background: none; }
+
+    .footer-menu-list,
+    .footer-about-list {
+        margin: 32px 0 0;
+        height: 100%;
+    }
+
+    .footer-menu-listItem,
+    .footer-about-listItem { 
+        text-align: left;
+        font-size: 14pt;
+        margin-bottom: 22px;
+    }
+
+    .footer-menu-listItem:last-of-type,
+    .footer-about-listItem:last-of-type { margin-bottom: 0; }
+    
+    .footer-article-logo-desktop { 
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+}
+
+@media (min-width: 1800px) {
+    /* Header Styles */
+
+    #header {
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+
+    /* Main styles */
+
+    #main { padding: 0 8rem; }
+} 
